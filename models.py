@@ -13,6 +13,7 @@ class Contact(db.Model):
 
     def serialize(self):
         return {
+            "id": self.id,
             "full_name": self.full_name,
             "email": self.email,
             "agenda_slug": self.agenda_slug,
