@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-script = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
+mysql-connector-python = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+start = "python main.py runserver"
+init = "python main.py db init"
+migrate = "python main.py db migrate"
+upgrade = "python main.py db upgrade"
+downgrade = "python main.py db downgrade"
